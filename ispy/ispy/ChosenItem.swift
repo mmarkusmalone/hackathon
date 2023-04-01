@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
-@State private var item: String
 
 struct ChosenItem: View {
+    @State var item: String = ""
     var body: some View {
-        HStack{
+        VStack(alignment: .center){
             Text("what item is this?")
-            TextField(text: $item, prompt: Text("write item here")) {
-                
-            }
+            TextField("write item here", text: $item)
+                .multilineTextAlignment(.center)
+            
         }
     }
 }
