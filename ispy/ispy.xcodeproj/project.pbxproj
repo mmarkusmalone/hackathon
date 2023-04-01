@@ -18,6 +18,7 @@
 		E2FCC21B29D8BF4D00B69EA5 /* congrats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCC21A29D8BF4D00B69EA5 /* congrats.swift */; };
 		E2FCC21F29D8C0CF00B69EA5 /* lost.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCC21E29D8C0CF00B69EA5 /* lost.swift */; };
 		DB9318C929D8A893000A3909 /* whichPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9318C829D8A893000A3909 /* whichPhoto.swift */; };
+		DB9318CB29D8C54B000A3909 /* ChosenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9318CA29D8C54B000A3909 /* ChosenItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E2FCC21A29D8BF4D00B69EA5 /* congrats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = congrats.swift; sourceTree = "<group>"; };
 		E2FCC21E29D8C0CF00B69EA5 /* lost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lost.swift; sourceTree = "<group>"; };
 		DB9318C829D8A893000A3909 /* whichPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whichPhoto.swift; sourceTree = "<group>"; };
+		DB9318CA29D8C54B000A3909 /* ChosenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				E2FCC21A29D8BF4D00B69EA5 /* congrats.swift */,
 				E2FCC21E29D8C0CF00B69EA5 /* lost.swift */,
 				DB9318C829D8A893000A3909 /* whichPhoto.swift */,
+				DB9318CA29D8C54B000A3909 /* ChosenItem.swift */,
 			);
 			path = ispy;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				DB9318BB29D88405000A3909 /* ContentView.swift in Sources */,
 				A61525E129D894500087AB3C /* ImagePicker.swift in Sources */,
+				DB9318CB29D8C54B000A3909 /* ChosenItem.swift in Sources */,
 				DB9318C929D8A893000A3909 /* whichPhoto.swift in Sources */,
 				A61525DF29D88F2B0087AB3C /* ImageView.swift in Sources */,
 				A61525E329D896E90087AB3C /* CameraView.swift in Sources */,
