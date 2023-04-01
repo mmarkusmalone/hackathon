@@ -48,6 +48,7 @@ struct startscreen: View {
             }
             .frame(maxWidth: .infinity, maxHeight: 200)
             .background(.white)
+            .cornerRadius(15)
             .padding(.horizontal)
             
         }
