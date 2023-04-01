@@ -42,11 +42,12 @@ struct ImageView: View {
             }
             .sheet(isPresented: $isShowPhotoLibrary) {
                 ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+            
+               
+                        }
+                    }
+                }
             }
-        }
-    }
-
-        }
        
 
 struct ImageView_Previews: PreviewProvider {

@@ -39,6 +39,7 @@ struct CameraView: View {
         }
         .sheet(isPresented: $isShowPhotoLibrary) {
             ImagePicker(sourceType: .camera, selectedImage: self.$image)
+            
         }
     }
 }
