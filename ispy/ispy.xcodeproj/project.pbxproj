@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61525DF29D88F2B0087AB3C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61525DE29D88F2B0087AB3C /* ImageView.swift */; };
+		A61525E129D894500087AB3C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61525E029D894500087AB3C /* ImagePicker.swift */; };
+		A61525E329D896E90087AB3C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61525E229D896E90087AB3C /* CameraView.swift */; };
 		DB9318B929D88405000A3909 /* ispyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9318B829D88405000A3909 /* ispyApp.swift */; };
 		DB9318BB29D88405000A3909 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9318BA29D88405000A3909 /* ContentView.swift */; };
 		DB9318BD29D88408000A3909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9318BC29D88408000A3909 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A61525DE29D88F2B0087AB3C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		A61525E029D894500087AB3C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A61525E229D896E90087AB3C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		DB9318B529D88405000A3909 /* ispy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ispy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9318B829D88405000A3909 /* ispyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ispyApp.swift; sourceTree = "<group>"; };
 		DB9318BA29D88405000A3909 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,8 +59,11 @@
 			children = (
 				DB9318B829D88405000A3909 /* ispyApp.swift */,
 				DB9318BA29D88405000A3909 /* ContentView.swift */,
+				A61525DE29D88F2B0087AB3C /* ImageView.swift */,
+				A61525E229D896E90087AB3C /* CameraView.swift */,
 				DB9318BC29D88408000A3909 /* Assets.xcassets */,
 				DB9318BE29D88409000A3909 /* Preview Content */,
+				A61525E029D894500087AB3C /* ImagePicker.swift */,
 			);
 			path = ispy;
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9318BB29D88405000A3909 /* ContentView.swift in Sources */,
+				A61525E129D894500087AB3C /* ImagePicker.swift in Sources */,
+				A61525DF29D88F2B0087AB3C /* ImageView.swift in Sources */,
+				A61525E329D896E90087AB3C /* CameraView.swift in Sources */,
 				DB9318B929D88405000A3909 /* ispyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +282,7 @@
 				DEVELOPMENT_TEAM = G394ZKL57Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +312,7 @@
 				DEVELOPMENT_TEAM = G394ZKL57Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
