@@ -19,7 +19,7 @@ struct ChosenItem: View {
             Text("What item is this?")
             TextField("write item here", text: $item)
                 .multilineTextAlignment(.center)
-            NavigationLink(destination: chatguess()){
+            NavigationLink(destination: chatguess(word: self.$item)){
                 Text("**Let's Start**")
                     .padding()
                     .foregroundColor(.white)
