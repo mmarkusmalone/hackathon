@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1106372A29D890DE006AB0A9 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1106372929D890DE006AB0A9 /* OpenAISwift */; };
+		1106372C29D8918F006AB0A9 /* chatguess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106372B29D8918F006AB0A9 /* chatguess.swift */; };
 		A61525DF29D88F2B0087AB3C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61525DE29D88F2B0087AB3C /* ImageView.swift */; };
 		A61525E129D894500087AB3C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61525E029D894500087AB3C /* ImagePicker.swift */; };
 		A61525E329D896E90087AB3C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61525E229D896E90087AB3C /* CameraView.swift */; };
@@ -22,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1106372B29D8918F006AB0A9 /* chatguess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatguess.swift; sourceTree = "<group>"; };
 		A61525DE29D88F2B0087AB3C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		A61525E029D894500087AB3C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A61525E229D896E90087AB3C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1106372A29D890DE006AB0A9 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				DB9318B829D88405000A3909 /* ispyApp.swift */,
+				1106372B29D8918F006AB0A9 /* chatguess.swift */,
 				DB9318BA29D88405000A3909 /* ContentView.swift */,
 				A61525DE29D88F2B0087AB3C /* ImageView.swift */,
 				A61525E229D896E90087AB3C /* CameraView.swift */,
@@ -107,6 +112,9 @@
 			dependencies = (
 			);
 			name = ispy;
+			packageProductDependencies = (
+				1106372929D890DE006AB0A9 /* OpenAISwift */,
+			);
 			productName = ispy;
 			productReference = DB9318B529D88405000A3909 /* ispy.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +143,9 @@
 				Base,
 			);
 			mainGroup = DB9318AC29D88405000A3909;
+			packageReferences = (
+				1106372829D890DE006AB0A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = DB9318B629D88405000A3909 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9318BB29D88405000A3909 /* ContentView.swift in Sources */,
+				1106372C29D8918F006AB0A9 /* chatguess.swift in Sources */,
 				A61525E129D894500087AB3C /* ImagePicker.swift in Sources */,
 				DB9318CB29D8C54B000A3909 /* ChosenItem.swift in Sources */,
 				DB9318C929D8A893000A3909 /* whichPhoto.swift in Sources */,
@@ -375,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1106372829D890DE006AB0A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1106372929D890DE006AB0A9 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1106372829D890DE006AB0A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB9318AD29D88405000A3909 /* Project object */;
 }
