@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1106372A29D890DE006AB0A9 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1106372929D890DE006AB0A9 /* OpenAISwift */; };
+		1106372C29D8918F006AB0A9 /* chatguess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106372B29D8918F006AB0A9 /* chatguess.swift */; };
 		DB9318B929D88405000A3909 /* ispyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9318B829D88405000A3909 /* ispyApp.swift */; };
 		DB9318BB29D88405000A3909 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9318BA29D88405000A3909 /* ContentView.swift */; };
 		DB9318BD29D88408000A3909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9318BC29D88408000A3909 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1106372B29D8918F006AB0A9 /* chatguess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatguess.swift; sourceTree = "<group>"; };
 		DB9318B529D88405000A3909 /* ispy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ispy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9318B829D88405000A3909 /* ispyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ispyApp.swift; sourceTree = "<group>"; };
 		DB9318BA29D88405000A3909 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1106372A29D890DE006AB0A9 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				DB9318B829D88405000A3909 /* ispyApp.swift */,
+				1106372B29D8918F006AB0A9 /* chatguess.swift */,
 				DB9318BA29D88405000A3909 /* ContentView.swift */,
 				DB9318BC29D88408000A3909 /* Assets.xcassets */,
 				DB9318BE29D88409000A3909 /* Preview Content */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ispy;
+			packageProductDependencies = (
+				1106372929D890DE006AB0A9 /* OpenAISwift */,
+			);
 			productName = ispy;
 			productReference = DB9318B529D88405000A3909 /* ispy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = DB9318AC29D88405000A3909;
+			packageReferences = (
+				1106372829D890DE006AB0A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = DB9318B629D88405000A3909 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9318BB29D88405000A3909 /* ContentView.swift in Sources */,
+				1106372C29D8918F006AB0A9 /* chatguess.swift in Sources */,
 				DB9318B929D88405000A3909 /* ispyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1106372829D890DE006AB0A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1106372929D890DE006AB0A9 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1106372829D890DE006AB0A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB9318AD29D88405000A3909 /* Project object */;
 }

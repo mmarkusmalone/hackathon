@@ -11,7 +11,7 @@ import SwiftUI
 struct ispyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            chatguess()
         }
     }
 }
