@@ -1,16 +1,15 @@
 //
-//  startscreen.swift
+//  startscreen2.swift
 //  ispy
 //
-//  Created by Amelia Lane on 4/1/23.
+//  Created by Meghan Gill on 4/2/23.
 //
 
 import SwiftUI
 
-struct startscreen: View {
+struct startscreen2: View {
     @State private var isActive = false
     var body: some View {
-        NavigationView{
             ZStack{
                 Image("StartBackground")
                     .resizable()
@@ -52,7 +51,6 @@ struct startscreen: View {
                 
             }
         }
-    }
         
         
         struct startscreen_Previews: PreviewProvider {

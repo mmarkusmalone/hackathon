@@ -33,16 +33,14 @@ struct congrats: View {
                     .fontWeight(.semibold)
                 
                 
-                
-                Button("Play Again?") {
-                    print("Button tapped!")
-                    
-                    
+                NavigationLink(destination: startscreen2()){
+                    Text("Play Again?")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(.red)
+                        .cornerRadius(15)
                 }
-                .padding()
-                .foregroundColor(.black)
-                .background(.red)
-                .cornerRadius(15)
+               
                 
                 
             }
