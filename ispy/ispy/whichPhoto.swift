@@ -9,23 +9,28 @@ import SwiftUI
 
 struct whichPhoto: View {
     var body: some View {
-        NavigationView{
+        ZStack{
+            Image("StartBackground")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
             HStack(alignment: .center){
                 
                 
                 NavigationLink(destination: ImageView()){
-                    Text("choose from \nphoto library")
+                    Text("Choose From \nPhoto Library")
                         .padding()
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .background(.red)
                         .cornerRadius(15)
                 }
                 
                 
                 NavigationLink(destination: CameraView()){
-                    Text("take photo")
-                        .padding()
-                        .foregroundColor(.black)
+                    Text("Take Photo")
+                        .padding(27)
+                        .foregroundColor(.white)
                         .background(.red)
                         .cornerRadius(15)
                 }
@@ -45,6 +50,7 @@ struct whichPhoto: View {
             whichPhoto()
         }
     }
-       
-}
     
+    
+    
+}

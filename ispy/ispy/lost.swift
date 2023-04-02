@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct lost: View {
+    @State private var isActive = false
     var body: some View {
         ZStack{
             Image("purple")
@@ -34,15 +35,13 @@ struct lost: View {
                 
                 
                 
-                Button("Play Again?") {
-                    print("Button tapped!")
-                    
-                    
+                NavigationLink(destination: startscreen2() ){
+                    Text("Play Again?")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(.red)
+                        .cornerRadius(15)
                 }
-                .padding()
-                .foregroundColor(.black)
-                .background(.red)
-                .cornerRadius(15)
                 
                 
             }
