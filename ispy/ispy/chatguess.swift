@@ -78,6 +78,7 @@ struct chatguess: View {
                             .font(.title3)
                             .cornerRadius(12)
                     }}
+
                 Button("Give me a Hint") {
                 action: do{
                     switch hints{
@@ -90,11 +91,9 @@ struct chatguess: View {
                         }
                         break
                     case 5:
- 
                         print("better luck next time")
                         break
                     default:
- 
                         dispatchGroup.notify(queue: .main) {
                             recievedhints[hints] = oghints[hints]
                             print(oghints[0], recievedhints[0], oghints[1], recievedhints[1], oghints[2], recievedhints[2], oghints[3], recievedhints[3], oghints[4], recievedhints[4],separator: " ||| \n")
@@ -161,9 +160,8 @@ public class ViewModel: ObservableObject {
     func setup() {
         client = OpenAISwift(authToken: "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")
     }
-    
+   
     func send(text: String, completion: @escaping(String) -> Void) {
- 
             client?.sendCompletion(with: text, maxTokens: 500, completionHandler: {
                 result in
                 switch result {
@@ -172,7 +170,6 @@ public class ViewModel: ObservableObject {
                     case.failure(_):
                         print("fail")
                         break
- 
                 }
             })
     }
