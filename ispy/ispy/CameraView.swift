@@ -12,8 +12,11 @@ struct CameraView: View {
     
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
+    @State private var showNextScreen = false
     
     var body: some View {
+        
+            
         VStack {
             
             Image("CameraBackground")
@@ -37,12 +40,19 @@ struct CameraView: View {
                 .foregroundColor(.purple)
             }
         }
-        .sheet(isPresented: $isShowPhotoLibrary) {
+        .sheet(isPresented: $isShowPhotoLibrary, onDismiss: {
+            showNextScreen = true
+        }) {
             ImagePicker(sourceType: .camera, selectedImage: self.$image)
-            
+        }
+        NavigationLink(destination: ChosenItem(photoSelected: self.$image),
+                       isActive: self.$showNextScreen) {
+            EmptyView()
+        }.hidden()
+        
         }
     }
-}
+
 
 
 struct CameraView_Previews: PreviewProvider {

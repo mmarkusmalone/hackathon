@@ -33,9 +33,9 @@ struct startscreen: View {
                         .fontWeight(.semibold)
                     
                     NavigationLink(destination: whichPhoto()){
-                        Text("Start")
+                        Text("**Start**")
                         .padding()
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .background(.red)
                         .cornerRadius(15)
                     }
@@ -44,9 +44,10 @@ struct startscreen: View {
                     
                 }
                 .frame(maxWidth: .infinity, maxHeight: 200)
-                .background(.white)
+                .background(.white.opacity(0.75))
                 .cornerRadius(15)
                 .padding(.horizontal)
+                
                 
             }
         }

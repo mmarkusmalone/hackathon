@@ -8,19 +8,31 @@
 import SwiftUI
 
 struct ChosenItem: View {
+    @Binding var photoSelected: UIImage
     @State var item: String = ""
     var body: some View {
         VStack(alignment: .center){
-            Text("what item is this?")
+            Image(uiImage: photoSelected)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 500)
+            Text("What item is this?")
             TextField("write item here", text: $item)
                 .multilineTextAlignment(.center)
-            
+            NavigationLink(destination: chatguess()){
+                Text("**Let's Start**")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(.red)
+                    .cornerRadius(15)
+            }
         }
     }
 }
 
 struct ChosenItem_Previews: PreviewProvider {
     static var previews: some View {
-        ChosenItem()
+        ChosenItem(photoSelected: Binding.constant(UIImage()))
     }
 }
+
